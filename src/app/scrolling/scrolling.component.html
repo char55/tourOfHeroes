@@ -1,0 +1,64 @@
+<br>
+<br>
+<br>
+
+<div>
+  testing virtual scrolling
+</div>
+
+<br>
+<br>
+<br>
+
+<!--
+<h2>Drag and Drop example</h2>
+<div class="box" cdkDrag cdkDragLockAxis="y">Drag me around!</div>
+<br />
+<div cdkDropList (cdkDropListDropped)="onDrop($event)">
+  <div class="box" *ngFor="let item of items" cdkDrag>
+    {{item}}
+  </div>
+</div> -->
+
+
+
+
+<cdk-virtual-scroll-viewport class="vs" itemSize="50" >
+  <table class="tg" >
+    <thead>
+      <tr  >
+        <th *ngFor="let t of scrollingService.title" class="tg-0pky"
+        >{{t}}</th>
+      </tr>
+    </thead>
+    <!-- <cdk-virtual-scroll-viewport class="vs" itemSize="50" > -->
+    <tbody >
+      <!-- <tr *ngFor="let d of scrollingService.DATA"> -->
+      <tr *cdkVirtualFor="let d of scrollingService.DATA">
+        <td *ngFor="let t of scrollingService.title" class="tg-0pky">{{d}}</td>
+      </tr>
+    </tbody>
+    <!-- </cdk-virtual-scroll-viewport> -->
+  </table>
+</cdk-virtual-scroll-viewport>
+
+
+
+
+
+<!-- <table class="tg" >
+    <tr >
+      <td *ngFor="let t of scrollingService.title" class="tg-0pky th"
+      >p</td>
+    </tr>
+</table>
+
+<cdk-virtual-scroll-viewport class="vs" itemSize="50" >
+  <table class="tg" >
+      <tr *cdkVirtualFor="let d of scrollingService.DATA">
+        <td *ngFor="let t of scrollingService.title" class="tg-0pky">{{d}}</td>
+      </tr>
+  </table>
+</cdk-virtual-scroll-viewport> -->
+
+

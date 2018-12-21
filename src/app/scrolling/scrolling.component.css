@@ -1,0 +1,85 @@
+
+.vs {
+  height: 100vh;
+  width: 100%;
+}
+
+/*
+td {
+  border: 1px solid #ddd;
+  padding: 1em;
+}
+
+#er:nth-child(even){background-color: #f2f2f2;}
+
+
+tr:hover {background-color: rgb(216, 199, 199);}
+
+.th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+#tg {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+
+.tg-0pky {
+  width: 700px;
+} */
+
+
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  font-family: Arial,
+  sans-serif;
+  font-size: 14px;
+  padding: 9px 19px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 9px 19px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+  background-color: aqua;
+}
+
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top
+}
+
+
+
+/* You can add global styles to this file, and also import other style files */
+/* body {
+  font-family: 'Segoe UI', Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #507ce8;
+  color: #fff;
+  overflow: hidden;
+} */

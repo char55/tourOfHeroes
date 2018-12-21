@@ -1,0 +1,60 @@
+<div (contextmenu)="onRightClick($event)" (click)="offClick()" class="thezone">
+
+  <p >
+    rightclick works!
+    {{nRightClick}}
+    <br>
+    Any clicks
+    {{nAny}}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    {{action}}
+  </p>
+  <div (click)="addOne()">
+    Test here click to change 'action' to 'One'
+  </div>
+
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu" >
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+
+</div>
+
+
+
+
+
+
+<ul id="options" [hidden]="opT" [ngStyle]="{'left.px': x, 'top.px': y}">
+  <li class="ind2" (click)="addOne()">{{options[0]}} </li>
+  <li class="ind2" (click)="addTwo()">{{options[1]}} </li>
+  <li class="ind2" (click)="addThree()">{{options[2]}} </li>
+</ul>
+
+<!-- <ul id="options" [hidden]="opT" [ngStyle]="{'left.px': x, 'top.px': y}">
+  <button class="ind">{{options[0]}} </button><br>
+  <button class="ind">{{options[1]}} </button><br>
+  <button class="ind">{{options[2]}} </button><br>
+  <button class="ind">{{x}}</button>
+</ul> -->
+
+<!-- <md-menu-content>
+    <md-menu-item>
+        <md-button>
+          Copy
+        </md-button>
+    </md-menu-item>
+    <md-menu-item>
+        <md-button>
+          Paste
+        </md-button>
+    </md-menu-item>
+</md-menu-content> -->
+

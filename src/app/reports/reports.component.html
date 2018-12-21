@@ -1,0 +1,21 @@
+<p>
+  {{reportsService.DATA[0].name}}
+</p>
+
+
+<h2>Reports</h2>
+
+<div class="reportsMain">
+
+  <ul class="report">
+    <li *ngFor="let report of reportsService.DATA"
+    [class.selected]="report === selectedReport"
+    (click)="onSelect(report)">
+    <span class="badge">{{report.id}}</span> {{report.name}}
+  </li>
+</ul>
+
+
+<app-report-detail [report]="selectedReport" class="details"></app-report-detail>
+
+</div>
