@@ -1,9 +1,6 @@
-<p>
-  {{reportsService.DATA[0].name}}
-</p>
-
-
 <h2>Reports</h2>
+
+<!-- <img src='https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'> -->
 
 <div class="reportsMain">
 
@@ -11,11 +8,24 @@
     <li *ngFor="let report of reportsService.DATA"
     [class.selected]="report === selectedReport"
     (click)="onSelect(report)">
-    <span class="badge">{{report.id}}</span> {{report.name}}
-  </li>
-</ul>
+      <!-- <span class="badge">
+        <img src={{report.icon}} height="20px" >
+      </span> -->
+      <span class="text">
+          <img src={{report.icon}} height="30px" >
+        {{report.name}}
+      </span>
+    </li>
+  </ul>
 
 
-<app-report-detail [report]="selectedReport" class="details"></app-report-detail>
+  <app-report-detail
+    [report]="selectedReport"
+    class="details">
+  </app-report-detail>
+
+  <div class="print" (click)=print()>
+      <img src='https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX15760188.jpg' height="60px" > PRINT
+  </div>
 
 </div>

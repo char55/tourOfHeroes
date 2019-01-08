@@ -23,24 +23,17 @@
 
 
 
-<cdk-virtual-scroll-viewport class="vs" itemSize="50" >
+<!-- <cdk-virtual-scroll-viewport class="vs" itemSize="50" >
   <table class="tg" >
-    <thead>
       <tr  >
         <th *ngFor="let t of scrollingService.title" class="tg-0pky"
         >{{t}}</th>
       </tr>
-    </thead>
-    <!-- <cdk-virtual-scroll-viewport class="vs" itemSize="50" > -->
-    <tbody >
-      <!-- <tr *ngFor="let d of scrollingService.DATA"> -->
       <tr *cdkVirtualFor="let d of scrollingService.DATA">
         <td *ngFor="let t of scrollingService.title" class="tg-0pky">{{d}}</td>
       </tr>
-    </tbody>
-    <!-- </cdk-virtual-scroll-viewport> -->
   </table>
-</cdk-virtual-scroll-viewport>
+</cdk-virtual-scroll-viewport> -->
 
 
 
@@ -62,3 +55,18 @@
 </cdk-virtual-scroll-viewport> -->
 
 
+<cdk-virtual-scroll-viewport class="vs" itemSize="100" >
+    <table class="tg" >
+        <tr  >
+          <th *ngFor="let t of scrollingService.title" class="tg-0pky"
+          >{{t}}</th>
+        </tr>
+      <!-- <cdk-virtual-scroll-viewport class="vs" itemSize="50" > -->
+        <!-- <tr *ngFor="let d of scrollingService.DATA"> -->
+        <tr *cdkVirtualFor="let d of scrollingService.test">
+
+          <td *ngFor="let t of keys" class="tg-0pky">{{d[t]}}</td>
+        </tr>
+      <!-- </cdk-virtual-scroll-viewport> -->
+    </table>
+  </cdk-virtual-scroll-viewport>

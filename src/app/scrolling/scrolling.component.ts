@@ -11,8 +11,7 @@ import { moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 export class ScrollingComponent implements OnInit {
 
   items = ['Zero', 'One', 'Two', 'Three'];
-
-
+  keys = Object.keys(this.scrollingService.test[0]);
 
   constructor(public scrollingService: ScrollingService) { }
 

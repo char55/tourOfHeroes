@@ -19,7 +19,160 @@ export class ScrollingService {
   ];
 
   title = [
-    'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING'
+    'TESTING', 'TESTING', 'TESTING'
+    // , 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING', 'TESTING'
   ];
 
+  test = [
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three',
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three',
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three',
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three',
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three',
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three',
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    },
+    {
+      a : 'one',
+      b: 'two',
+      c: 'three'
+    }
+  ];
 }
