@@ -20,7 +20,7 @@ import { ScrollingComponent } from './scrolling/scrolling.component';
 import { RightclickComponent } from './rightclick/rightclick.component';
 import 'hammerjs';
 import {MatMenuModule} from '@angular/material/menu';
-
+import { MenuComponent } from './rightclick/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import {MatMenuModule} from '@angular/material/menu';
     ReportDetailComponent,
     ScrollingComponent,
     RightclickComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
