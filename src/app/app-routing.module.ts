@@ -6,6 +6,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ScrollingComponent } from './scrolling/scrolling.component';
 import { RightclickComponent } from './rightclick/rightclick.component';
+import { PrintLayoutComponent } from './reports/print-layout/print-layout.component';
+import { InvoiceComponent } from './reports/invoice/invoice.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -13,7 +15,14 @@ const routes: Routes = [
   { path: 'reports', component: ReportsComponent },
   { path: 'heroes', component: HeroesComponent },
   { path: 'scrolling', component: ScrollingComponent },
-  { path: 'rightclick', component: RightclickComponent }
+  { path: 'rightclick', component: RightclickComponent },
+  { path: 'print',
+    outlet: 'print',
+    component: PrintLayoutComponent,
+    children: [
+      { path: 'invoice/:selectedJSON', component: InvoiceComponent }
+    ]
+  },
 ];
 
 

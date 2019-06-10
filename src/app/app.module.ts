@@ -19,8 +19,18 @@ import { ReportDetailComponent } from './reports/report-detail/report-detail.com
 import { ScrollingComponent } from './scrolling/scrolling.component';
 import { RightclickComponent } from './rightclick/rightclick.component';
 import 'hammerjs';
+<<<<<<< HEAD
 import {MatMenuModule} from '@angular/material/menu';
 import { MenuComponent } from './rightclick/menu/menu.component';
+=======
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { PrintLayoutComponent } from './reports/print-layout/print-layout.component';
+import { InvoiceComponent } from './reports/invoice/invoice.component';
+import { PrintService } from './reports/print.service';
+>>>>>>> 296629da816b79226ef8baf3541d078395ebf09b
 
 @NgModule({
   declarations: [
@@ -33,7 +43,13 @@ import { MenuComponent } from './rightclick/menu/menu.component';
     ReportDetailComponent,
     ScrollingComponent,
     RightclickComponent,
+<<<<<<< HEAD
     MenuComponent,
+=======
+    PrintLayoutComponent,
+    InvoiceComponent,
+
+>>>>>>> 296629da816b79226ef8baf3541d078395ebf09b
   ],
   imports: [
     BrowserModule,
@@ -44,9 +60,11 @@ import { MenuComponent } from './rightclick/menu/menu.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule,
+    // FontAwesomeModule
   ],
-  providers: [],
+  providers: [PrintService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

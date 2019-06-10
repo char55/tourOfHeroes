@@ -8,17 +8,20 @@ export class ReportsService {
     {
       id: 1,
       name: 'report1',
-      graph: 'one'
+      graph: 'one',
+      icon: 'assets/icons/chart.png'
     },
     {
       id: 2,
       name: 'report2',
-      graph: 'two'
+      graph: 'two',
+      icon: 'assets/icons/pie.jpg'
     },
     {
       id: 3,
       name: 'report3',
-      graph: 'three'
+      graph: 'three',
+      icon: 'assets/icons/pie.jpg'
     }
   ];
 
